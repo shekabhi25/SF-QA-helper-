@@ -288,10 +288,10 @@ class FieldAccessTool(BaseTool):
     
     name: str = "field_access_tool"
     description: str = "Checks if a user has access to specific Salesforce fields"
+    user_context: Optional[Dict[str, Any]] = None
     
     def __init__(self):
         super().__init__()
-        self.user_context = None
     
     def set_user_context(self, context: Dict[str, Any]):
         """Set the user context for the tool"""
@@ -454,10 +454,10 @@ class DataVisualizationTool(BaseTool):
     
     name: str = "data_visualization_tool"
     description: str = "Creates chart.js visualizations from Salesforce data for display in the chat interface"
+    user_context: Optional[Dict[str, Any]] = None
     
     def __init__(self):
         super().__init__()
-        self.user_context = None
     
     def set_user_context(self, context: Dict[str, Any]):
         """Set the user context for the tool"""

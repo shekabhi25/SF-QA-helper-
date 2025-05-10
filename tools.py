@@ -17,10 +17,10 @@ class SalesforceQueryTool(BaseTool):
     
     name: str = "salesforce_query_tool"
     description: str = "Generates and simulates execution of SOQL queries for Salesforce data retrieval"
+    user_context: Optional[Dict[str, Any]] = None
     
     def __init__(self):
         super().__init__()
-        self.user_context = None
     
     def set_user_context(self, context: Dict[str, Any]):
         """Set the user context for the tool"""

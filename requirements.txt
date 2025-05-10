@@ -1,7 +1,8 @@
 fastapi==0.104.1
 uvicorn==0.24.0
+gunicorn==21.2.0
+langchain>=0.1.10,<0.2.0
 crewai==0.28.0
-langchain==0.0.352
 langchain-google-genai==0.0.5
 google-generativeai==0.3.1
 python-dotenv==1.0.0
@@ -9,4 +10,4 @@ pydantic==2.4.2
 tiktoken==0.5.1
 numpy==1.26.0
 pandas==2.1.1
-pytest==7.4.3 
+pytest==7.4.3
